@@ -1,0 +1,50 @@
+================ STUDENT CSV CRUD OPERATIONS ================
+
+CREATE: Students.csv created with header and 2 rows.
+
+After CREATE operation:
+---------------------------------------------------------------
+studentId,name,branch,marks1,marks2,marks3,marks4,marks5,percentage
+S101,Aarav,CSE,78,82,75,80,84,79.80
+S102,Meera,AIML,88,90,86,91,87,88.40
+---------------------------------------------------------------
+
+ADD: Added student -> S103 Riya
+ADD: Added student -> S104 Kabir
+ADD: Added student -> S105 Neha
+
+After ADD operation:
+---------------------------------------------------------------
+studentId,name,branch,marks1,marks2,marks3,marks4,marks5,percentage
+S101,Aarav,CSE,78,82,75,80,84,79.80
+S102,Meera,AIML,88,90,86,91,87,88.40
+S103,Riya,ECE,71,76,73,0,0,0.00
+S104,Kabir,CSE,84,79,88,0,0,0.00
+S105,Neha,AIML,67,72,70,0,0,0.00
+---------------------------------------------------------------
+
+
+UPDATE: All rows updated with correct marks and percentage.
+After UPDATE operation:
+---------------------------------------------------------------
+studentId,name,branch,marks1,marks2,marks3,marks4,marks5,percentage
+S101,Aarav,CSE,78,82,75,80,84,79.80
+S102,Meera,AIML,88,90,86,91,87,88.40
+S103,Riya,ECE,71,76,73,72,78,74.00
+S104,Kabir,CSE,84,79,88,85,81,83.40
+S105,Neha,AIML,67,72,70,69,74,70.40
+---------------------------------------------------------------
+
+
+DELETE: Row deleted for studentId = S104
+After DELETE operation:
+---------------------------------------------------------------
+studentId,name,branch,marks1,marks2,marks3,marks4,marks5,percentage
+S101,Aarav,CSE,78,82,75,80,84,79.80
+S102,Meera,AIML,88,90,86,91,87,88.40
+S103,Riya,ECE,71,76,73,72,78,74.00
+S105,Neha,AIML,67,72,70,69,74,70.40
+---------------------------------------------------------------
+
+EXCEPTION CASE: Trying to read a file that does not exist...
+IOException while displaying file: MissingStudents.csv (No such file or directory)
