@@ -1,0 +1,41 @@
+================ JAVA FX JDBC CRUD OUTPUT ================
+
+[Restaurant - INSERT]
+Inserted Restaurant: Cafe Java
+Inserted Restaurant: Spice Hub
+
+[MenuItem - INSERT]
+Inserted Menu Item: Burger
+Inserted Menu Item: Coffee
+
+[Restaurant - SELECT]
+ID    NAME                 ADDRESS
+1     Cafe Java            Pune Camp
+2     Spice Hub            Baner
+
+[MenuItem - SELECT]
+ID    NAME               PRICE      RID
+102   Burger             90.00      1
+107   Coffee             80.00      1
+
+[Restaurant - UPDATE]
+Restaurant updated successfully.
+
+[MenuItem - UPDATE]
+Menu item updated successfully.
+
+[MenuItem - DELETE]
+Menu item deleted successfully.
+
+================ CURRENT RESTAURANTS ================
+ID    NAME                 ADDRESS
+1     Cafe Java Central    Pune Station Road
+2     Spice Hub            Baner
+
+================ CURRENT MENU ITEMS =================
+ID    NAME               PRICE      RID
+107   Cold Coffee        120.00     1
+
+[Exception Case]
+Error: Price cannot be empty.
+Error: Id cannot be empty.
